@@ -37,7 +37,7 @@ class SunnyApiProvider extends BaseApiProvider{
       if (error.response != null && error.response!.data != null) {
         var errorResponse = ErrorResponse.fromJson(error.response!.data);
         errorMessage = errorResponse.message;
-      } else if (error.message.isNotEmpty) {
+      } else if (error.message != null && error.message!.isNotEmpty) {
         errorMessage = await connectionCheck();
       }
 
@@ -49,7 +49,7 @@ class SunnyApiProvider extends BaseApiProvider{
 
   Future<String> connectionCheck() async {
     try {
-      final result = await InternetAddress.lookup('example.com');
+      final result = await InternetAddress.lookup('google.com');
       if (result.isNotEmpty && result[0].rawAddress.isNotEmpty) {
         return SunnyTexts.get()['noOrSlowInternetConnection'];
       }

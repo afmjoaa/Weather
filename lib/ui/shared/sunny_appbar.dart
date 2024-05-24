@@ -27,8 +27,8 @@ class SunnyAppBar extends StatelessWidget {
               assetLocation,
               fit: BoxFit.contain,
               alignment: Alignment.centerLeft,
-              height: 24,
-              width: 24,
+              height: 20,
+              width: 22,
             ),
             tooltip: tooltip ?? 'Toggle Appbar menu',
             onPressed: () {

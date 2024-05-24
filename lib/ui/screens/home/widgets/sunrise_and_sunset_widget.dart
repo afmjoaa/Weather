@@ -35,6 +35,7 @@ class SunriseAndSunsetWidget extends StatelessWidget {
                 'Sunrise and sunset',
                 style: TextStyle(
                   fontSize: 18,
+                  fontWeight: FontWeight.w600,
                 ),
               ),
             ),
@@ -49,7 +50,8 @@ class SunriseAndSunsetWidget extends StatelessWidget {
                     sunRise,
                     style: const TextStyle(
                       color: Color(0xff171717),
-                      fontSize: 12,
+                      fontSize: 14,
+                      fontWeight: FontWeight.w600,
                       height: 0,
                     ),
                     textAlign: TextAlign.right,
@@ -92,22 +94,24 @@ class SunriseAndSunsetWidget extends StatelessWidget {
                                 ),
                               ),
                               Positioned(
-                                top: 60,
+                                top: 50,
                                 child: Container(
                                   height: 35,
                                   width: 35,
                                   child: SvgPicture.asset(
                                     'assets/icons/sunrise.svg',
+                                    color: Color(0xffff7300),
                                   ),
                                 ),
                               ),
                               const Positioned(
-                                top: 85,
+                                top: 78,
                                 child: Text(
                                   'sunrise',
                                   style: TextStyle(
-                                    fontSize: 10,
-                                    color: Color(0xffBDBCE1),
+                                    fontSize: 14,
+                                    fontWeight: FontWeight.w600,
+                                    color: Color(0xffff7300),
                                   ),
                                 ),
                               ),
@@ -143,22 +147,24 @@ class SunriseAndSunsetWidget extends StatelessWidget {
                                 ),
                               ),
                               Positioned(
-                                bottom: 60,
+                                bottom: 50,
                                 child: Container(
                                   height: 35,
                                   width: 35,
                                   child: SvgPicture.asset(
                                     'assets/icons/sunset.svg',
+                                    color: Color(0xffa10000),
                                   ),
                                 ),
                               ),
                               const Positioned(
-                                bottom: 85,
+                                bottom: 78,
                                 child: Text(
                                   'sunset',
                                   style: TextStyle(
-                                    fontSize: 10,
-                                    color: Color(0xffBDBCE1),
+                                    fontSize: 14,
+                                    fontWeight: FontWeight.w600,
+                                    color: Color(0xffa10000),
                                   ),
                                 ),
                               ),
@@ -175,7 +181,8 @@ class SunriseAndSunsetWidget extends StatelessWidget {
                     sunSet,
                     style: const TextStyle(
                       color: Color(0xff171717),
-                      fontSize: 12,
+                      fontSize: 14,
+                      fontWeight: FontWeight.w600,
                       height: 0,
                     ),
                     textAlign: TextAlign.right,

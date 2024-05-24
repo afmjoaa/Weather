@@ -56,7 +56,7 @@ class _DashBoardWidgetState extends State<DashBoardWidget> {
             SunnyAppBar(
               onTabCallback: () => widget.zoomDrawerController.toggle?.call(),
               assetLocation: 'assets/icons/menu.svg',
-              title: 'Sunny',
+              title: '',
             ),
             BlocProvider.value(
               value: _homeCubit,

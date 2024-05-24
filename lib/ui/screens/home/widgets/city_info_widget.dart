@@ -21,6 +21,8 @@ class CityInfoWidget extends StatelessWidget {
             'Today',
             style: TextStyle(
               fontSize: 14,
+              fontWeight: FontWeight.w600,
+              color: Colors.black26
             ),
           ),
         ),
@@ -34,6 +36,7 @@ class CityInfoWidget extends StatelessWidget {
             city,
             style: const TextStyle(
               height: 1.3,
+              fontWeight: FontWeight.w600,
               fontSize: 38,
             ),
           ),
@@ -50,7 +53,8 @@ class CityInfoWidget extends StatelessWidget {
             style: const TextStyle(
               height: 1.3,
               fontSize: 14,
-              color: Color(0xffBDBCE1),
+              fontWeight: FontWeight.w600,
+              color: Color(0xff836eff),
             ),
           ),
         ),

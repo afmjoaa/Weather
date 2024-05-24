@@ -3,6 +3,6 @@ import 'package:dio/dio.dart';
 abstract class BaseApiProvider{
   late Dio dio;
 
-  static const int connectTimeout = 29000;
-  static const int receiveTimeout = 29000;
+  static const Duration connectTimeout = Duration(seconds: 30);
+  static const Duration receiveTimeout = Duration(seconds: 30);
 }

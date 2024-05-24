@@ -42,6 +42,7 @@ class ComfortLevelWidget extends StatelessWidget {
               child: const Text(
                 'Comfort Level',
                 style: TextStyle(
+                  fontWeight: FontWeight.w600,
                   fontSize: 18,
                 ),
               ),
@@ -80,6 +81,7 @@ class ComfortLevelWidget extends StatelessWidget {
                             height: 1.4,
                             fontSize: 14,
                             fontFamily: 'MohrRounded',
+                            fontWeight: FontWeight.w600,
                           )),
                     ),
                   ),
@@ -91,20 +93,20 @@ class ComfortLevelWidget extends StatelessWidget {
                       text: TextSpan(
                         children: <TextSpan>[
                           TextSpan(
-                            text: 'Feels Like',
+                            text: 'Feels Like: ',
                             style: TextStyle(
                               fontFamily: 'MohrRounded',
-                              fontWeight: FontWeight.w400,
+                              fontWeight: FontWeight.w900,
                               fontSize: 14,
                               height: 0.8,
-                              color: Color(0xffBDBCE1),
+                              color: Color(0xff836eff),
                             ),
                           ),
                           TextSpan(
                             text: ' $feelsLike°',
                             style: TextStyle(
                               fontFamily: 'MohrRounded',
-                              fontWeight: FontWeight.w400,
+                              fontWeight: FontWeight.w900,
                               fontSize: 14,
                               height: 0.8,
                               color: Color(0xff171717),
@@ -117,26 +119,26 @@ class ComfortLevelWidget extends StatelessWidget {
                       margin: EdgeInsets.only(left: 35, right: 35),
                       height: 25,
                       width: 1,
-                      color: Color(0xffE4E4EE),
+                      color: Color(0xff836eff),
                     ),
                     RichText(
                       text: TextSpan(
                         children: <TextSpan>[
                           TextSpan(
-                            text: 'Pressure',
+                            text: 'Pressure: ',
                             style: TextStyle(
                               fontFamily: 'MohrRounded',
-                              fontWeight: FontWeight.w400,
+                              fontWeight: FontWeight.w900,
                               fontSize: 14,
                               height: 0.8,
-                              color: Color(0xffBDBCE1),
+                              color: Color(0xff836eff),
                             ),
                           ),
                           TextSpan(
                             text: ' $pressure hPa',
                             style: TextStyle(
                               fontFamily: 'MohrRounded',
-                              fontWeight: FontWeight.w400,
+                              fontWeight: FontWeight.w900,
                               fontSize: 14,
                               height: 0.8,
                               color: Color(0xff171717),

@@ -15,7 +15,25 @@ class SunnyApp extends StatelessWidget {
     final app = MaterialApp(
       title: 'Sunny',
       theme: ThemeData(
-        primarySwatch: Colors.grey,
+        elevatedButtonTheme: ElevatedButtonThemeData(
+          style: ElevatedButton.styleFrom(
+            backgroundColor: Colors.blue.shade100,
+            foregroundColor: Colors.grey.shade900,
+            shape: RoundedRectangleBorder(
+              borderRadius: BorderRadius.circular(16),
+            ),
+          ),
+        ),
+        appBarTheme: const AppBarTheme(
+          color: Color.fromARGB(255, 117, 208, 247),
+        ),
+        colorScheme: ColorScheme.fromSeed(
+          brightness: Brightness.light,
+          seedColor: const Color(0xFF13B9FF),
+        ),
+        snackBarTheme: const SnackBarThemeData(
+          behavior: SnackBarBehavior.floating,
+        ),
         fontFamily: 'MohrRounded',
       ),
       home: const HomeScreen(),
